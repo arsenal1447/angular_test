@@ -1,0 +1,16 @@
+<html ng-app>
+<body ng-controller="TextController">
+    <p>{{mes.textstr}}</p>
+    
+    <!-- <script src="angular.js"></script> -->
+    <script src="angular.1.1.min.js"></script>
+    
+    <script>
+        var mes = {};
+        mes.textstr = "this is the demo";
+        function  TextController($scope){
+            $scope.mes = mes;
+        }
+    </script>
+</body>
+</html>
